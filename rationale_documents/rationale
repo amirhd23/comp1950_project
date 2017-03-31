@@ -1,0 +1,41 @@
+/*
+ * list of rationals: suggested improvements for comp1950 website
+ * hopefully we will make all these changes in the deliverables.
+ * we can add to this list as we continue the project.
+ */
+ 
+ //-----------
+ //layout-design 
+ //-----------
+- comp1950 website doesn't have an attractive layout, design.
+- the website doens't use advanced css properties such as box shadows, gradient, etc eventhough it teaches these concepts.
+- the website is not responsive. The layout looks bad in mobile browsers.
+- navigation is always visible and takes up space.
+
+//--------------
+//semantics 
+//--------------
+- the website is not written in html5
+
+//--------------
+//SEO 
+//--------------
+- the website doesn't use <meta name="description" content=" "> to summarize data
+- the title of page doesnt mention BCIT
+- the site doesn't have custom error 404 page
+- GZip compression can be used to increase load time
+- cache control can be used to increase load time 
+
+//--------------
+//content organization 
+//--------------
+- exercises should be grouped together in a more concise way for easier access, instead of sprinkled around the course notes.
+
+//--------------
+//ohter
+//--------------
+- an online accompanying forum where students can ask/answer questions, or share useful information could be helpful.
+
+
+ 
+ 
