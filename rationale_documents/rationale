@@ -10,7 +10,9 @@
 - comp1950 website doesn't have an attractive layout, design.
 - the website doens't use advanced css properties such as box shadows, gradient, etc eventhough it teaches these concepts.
 - the website is not responsive. The layout looks bad in mobile browsers.
-- navigation is always visible and takes up space.
+- navigation is always visible and takes up space: it should be in auto hide mode, onMouseOver should become visible
+- notes should use accordion to view or hide the content. Each heading should be a clickable accordion.
+- all pages of protosite should have three layouts: normal view, printer friendly view, overhead projector view
 
 //--------------
 //semantics 
@@ -30,6 +32,12 @@
 //content organization 
 //--------------
 - exercises should be grouped together in a more concise way for easier access, instead of sprinkled around the course notes.
+- all homeworks should be accesible from one location
+- all resources links should be accesible from one location
+- an online quiz will help to achieve a paperless comp1950 website.
+- links to future homeworks and lectures should be inactive
+- links to BCIT.ca, my.bcit.ca, and the COMP1950 course description on BCIT.ca
+
 
 //--------------
 //ohter
