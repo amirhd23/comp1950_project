@@ -1,0 +1,29 @@
+//site map information
+
+about -> description: similar to http://bcitcomp.ca/1950/
+	  -> curriculum: similar to http://bcitcomp.ca/1950/courseinfo/
+	  
+resources: related links
+
+homeworks: all homeworks, use accordion in page
+
+exercises: all exercises, use accordion in page
+
+lectures ->session 1
+		...-> session 12
+
+		
+quiz: quizes for each session and solution to previous ones		
+		
+student forum
+		
+Contact Us -> email to Jeff parker
+
+BCIT Resources -> http://www.bcit.ca/
+			-> https://my.bcit.ca/cp/home/displaylogin
+			-> http://www.bcit.ca/cas/computing/
+			-> http://www.bcit.ca/study/courses/comp1950
+
+
+
+	  

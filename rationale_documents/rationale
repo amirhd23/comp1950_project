@@ -13,7 +13,7 @@
 - navigation is always visible and takes up space: it should be in auto hide mode, onMouseOver should become visible
 - notes should use accordion to view or hide the content. Each heading should be a clickable accordion.
 - all pages of protosite should have three layouts: normal view, printer friendly view, overhead projector view
-
+-ONE COLUMN LAYOUT
 //--------------
 //semantics 
 //--------------
@@ -43,7 +43,7 @@
 //ohter
 //--------------
 - an online accompanying forum where students can ask/answer questions, or share useful information could be helpful.
-
+- style switching plugin can be useful for changing style to overhead, normal (screen), etc.
 
  
  
