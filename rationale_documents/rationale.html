@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>COMP1950 final project: rationale</title>
+		<meta charset="utf-8" />
+		<link rel="stylesheet" href="css/style.css" />
+		<link rel="stylesheet" href="css/slicknav.css" />
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		<script src="js/jquery.slicknav.min.js"></script>
+		<meta name="viewport" content="initial-scale=1.0, width=device-width" />
+		<script>
+			$(document).ready(function(){
+				$("#nav-list").slicknav({label:"Menu", duration: 300});
+			});
+		</script>
+	</head>
+	<body>
+		<header>
+			<h1>COMP1950 final project</h1>
+			<h2>Rationale</h2>
+		</header>
+		<nav>
+			<ul id="nav-list">
+				<li><a href="">Introduction</a></li>
+				<li><a href="">Site Map</a></li>
+				<li><a href="">Protosite</a></li>
+				<li><a class="active" href="">Rationale</a></li>
+			</ul>
+		</nav>
+		<main>
+			<section>
+				<div class="full_width">
+					<h1>Our Recommendations</h1>
+					<p>In this page, we present our recommendations for COMP1950 course website.</p>
+				</div>
+				<article class="content_1">
+					<h2>Layout Design</h2>
+					<p>comp1950 website does not have an attractive layout design which is important to generate enthusiasm for students. </p>
+					<p>For instance, the website doesn't use advanced CSS properties such as box shadows, gradients, transitions, etc, even though it teaches these concepts.</p>
+					<p class="solution">Our proposed site uses attractive fonts, harmonious colors, and CSS techniques such as box shadows. Also, we use accordions for each header with sticky positions so that users can hide or show the content without being overwhelmed by the total textual content on the page.  </p>
+					<p>Navigation is always visible and takes up precious horizontal space which is needed for textual content of the site.</p>
+					<p class="solution">Our proposed site hides the navigation while the user is always able to click the menu button to see the it; therefore, the horizontal space is used more efficiently.</p>
+				</article>
+				<article class="content_1">
+					<h2>SEO</h2>
+					<p>The website does not use search engine optimization techniques.</p>
+					<p class="solution">Our proposed site uses <code>&lt; meta name="description" &gt; </code> to effectively summarize the content of the page.</p>
+					<p class="solution">A compound title for the pages is created which includes the word BCIT as company name.</p>
+					<p class="solution">A custom error 404 page is created which helps to improve SEO rankings.</p>
+					<p class="solution"><span class="future_work">For future implementations:</span>  GZip compression and cache control can be used to increase loading time of pages.</p>
+				</article>
+				<article class="content_1">
+					<h2>Content Organization</h2>
+					<p>Exercises and homework are distributed between the notes which is helpful during lectures. However, it would be benefitial to students to have access to all of them in one location for reviewing.</p>
+					<p class="solution">In our proposed site map, a separate link to all exercises, homework, and useful resource links (such as CSS validator, border box generator, etc) is provided.</p>
+					<p class="solution"><span class="future_work">For future implementations:</span> an online quiz will help to achieve a paperless comp1950 course.</p>
+					<p class="solution"><span class="future_work">For future implementations: </span>A search feature for the entire content of the site can be useful. In our proposed layout, we have provided a placeholder for this search input.</p>
+				</article>
+				<article class="content_1">
+					<h2>Other</h2>
+					<p class="solution">For optimum effectiveness, our proposed website has three different layouts for</p>
+					<ul>
+						<li>screen</li>
+						<li>print</li>
+						<li>projection</li>
+					</ul>
+					<p class="solution"><span class="future_work">For future implementations:</span> A style switching plugin (such as <a href="http://www.kelvinluck.com/assets/jquery/styleswitch/" target="_blank">stylesheet switcher</a>) can be used to change the style with one click.</p>
+					<p class="solution"><span class="future_work">For future implementations:</span> An online accompanying forum (with login credentials) for COMP1950 can be really helpful where students can share useful links, information and ask questions.</p>
+				</article>
+			</section>
+		</main>
+	</body>
+</html>
