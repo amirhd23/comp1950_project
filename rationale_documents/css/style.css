@@ -1,0 +1,174 @@
+/*
+	this style is inspired by submission 214 at
+	http://www.csszengarden.com/
+*/
+
+/*fancy font*/
+@import url(http://fonts.googleapis.com/css?family=Julius+Sans+One|Libre+Baskerville:400,400italic);
+
+
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+
+body{
+	font-family: 'Libre Baskerville', sans-serif;
+	background: url("../images/background_ocean.jpg");
+	background-attachment:fixed;
+	background-size: cover; 
+	background-repeat:no-repeat;
+	
+}
+
+header{
+	height: 210px;
+	background: url("../images/background_2.jpeg");
+	color: white;
+	font-size: 2em;
+	padding-top: 20px;
+	padding-left: 100px;
+	
+}
+
+h1{
+	font-family: 'Julius Sans One', sans-serif;
+}
+
+nav{
+	width: 100%;
+	background-color: rgba(82,88,110,0.5);
+	border-top-left-radius: 30px;
+	font-family: 'Julius Sans One', sans-serif;
+	font-weight: bold;
+}
+
+nav ul{
+	list-style-type: none;
+	
+}
+
+nav li{
+	display: inline;
+}
+
+nav a{
+	text-decoration: none;
+	display: inline-block;
+	width: 20%;
+	font-size: 1.5em;
+	padding: 20px 40px 20px 40px;
+	margin-bottom: 20px;
+	margin-top: 20px;
+	background-color: #be9d7a;
+	border-bottom-right-radius: 30px;
+	border-top-left-radius: 30px;
+	transition: border 0.2s ease;
+}
+
+nav a:link, nav a:visited{
+	color: white;
+}
+
+nav a:hover{
+	border-left: 20px solid white;
+}
+
+nav a.active{
+	border-left: 20px solid white;
+	box-shadow:  7px 7px 5px 0px rgba(50, 50, 50, 0.75)
+}
+
+.full_width{
+	background-color: rgba(255,255,255,0.5);
+	height: 100px;
+	padding-top: 20px;
+	padding-left: 30px;
+	
+}
+
+.future_work{
+	color: #f29d41;	
+}
+
+.content_1{
+	background-color: rgba(82,88,110,0.8);
+	width: 20%;
+	margin-top: 70px;
+	float:left;
+	padding: 20px;
+	margin-right: 2.5%;
+	margin-left: 2.5%;
+	color: white;
+	line-height: 1.5em;
+	box-shadow:  7px 7px 5px 0px rgba(50, 50, 50, 0.75);
+	
+}
+
+.content_1 h2{
+	font-style: italic;
+	margin-bottom: 10px;
+}
+
+.content_1 code{
+	font-size: 150%;
+}
+
+.content_1 p.solution{
+	color: #c1ffce;
+}
+
+.content_1 p:first-letter{
+	font-size: 150%;
+}
+
+.content_1 ul{
+	padding-left: 30px;
+	color: #c1ffce;
+}
+
+.content_1 a:link, .content_1 a:visited{
+	color: inherit;
+}
+
+/*for the jquery nav plugin*/
+#nav-list {display: block;}
+.slicknav_menu {display:none;}
+
+@media screen and (max-width: 1350px){
+	.content_1{
+		width: 550px;
+		height: 500px;
+		margin-left: 40px;
+	}
+}
+
+@media screen and (max-width: 1270px){
+	.content_1{
+		width: 80%;
+		margin-left: 10%;
+		height: auto;
+	}
+}
+
+@media screen and (max-width: 1160px){
+	#nav-list {display: none;}
+	.slicknav_menu {display:block;}
+	.content_1{
+		margin-top: 30px;
+	}
+}
+
+@media screen and (max-width: 950px){
+	header{
+		font-size: 1.5em;
+		padding-top: 10px;
+		padding-left: 50px;
+	}
+	
+	.full_width{
+		height: 150px;
+	}
+}
