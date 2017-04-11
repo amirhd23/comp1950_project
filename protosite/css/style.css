@@ -24,15 +24,9 @@ section,div,article,header{
 h1, h2, h3 {
     font-family: "Advent Pro" , verdana , sans-serif;
 }
-
-header>div{
-	padding-left:100px;
-}
 header h1 {
 	font-weight:bold;
-	font-size:25px;
-	margin-top:10px;
-	text-overflow: clip;
+	font-size:28px;
 	/* letter-spacing:16px; */
 }
 header h3{
@@ -41,8 +35,12 @@ header h3{
 	
 }
 
-
-
+nav{
+	width:200px;
+	height:100%;
+	background-color:linear-gradient(0deg,#fefefe,#bebebe);
+	border-left:10px solid #08aedc;
+}
 footer{
 	width:100%;
 	height:30px;
@@ -78,50 +76,6 @@ main{
 	margin:0px auto;
 
 }
-main>h2:first-child{
-	margin:10px auto 30px;
-	/* background:rgba(100,0,50,0.9); */
-	font-size:2.8em;
-	text-align:left;
-	letter-spacing:5px;
-	/* line-height:5em; */
-	/* border:1px solid gray; */
-	/* box-shadow:0px 0px 10px 1px rgba (0,0,0,0.1); */
-	color:black
-}
-
-/* figure{
-	
-	margin:0px auto;
-	width:45%;
-	height:auto;
-	background-color:white;
-	text-align:center;
-	
-	box-shadow:1px 1px 1px 1px rgba(0,0,0,0.7);
-	padding:5px;
-}
-figure img{
-	margin:0 auto;
-}
-.3column{
-	flex:1;
-	width:calc(100% / 3);
-}
-
- */
- .column{
-	flex-direction:column;
-	margin:0px;
-	padding-left:20px;
-
-}
- .row{
-	 margin-top:20px;
-	 
-	 display:flex;
-	 flex:1;
- }
 .bcit:first-letter{
 	color:red;	
 }
@@ -144,7 +98,10 @@ figure img{
 	width: 100%;
     height: 100%;
 }
-
+.sidenav{
+	background-color:#fefefe;
+	color:black;
+}
 
 .content_title{
 	width:100%;
@@ -152,25 +109,18 @@ figure img{
 	padding:0px 10%;
 	position:sticky;
 	top:0px;
-	border-left:22px solid rgba(10,10,10,0.1);
-	background:#b7eaff;
-	
-	
+	border-bottom:2px solid rgba(10,10,10,0.1);
+	background:#8fe1e2;
+	cursor: pointer;
 	display:flex;	
 	box-shadow:0px 0px 10px 1px rgba(0,0,0,0.1);
-	/* border-radius:10px; */
-	/* border-radius:10px 10px 0 0 ; */
-	margin-bottom:0px;
+	border-radius:10px;
+	margin-bottom:3px;
 }
-.collapsible{
-	cursor: pointer;
-}
-
-.collapsible:hover{
+.content_title:hover{
 	background-color:#8fe1e2;
 }
 .arrow_up{
-	
 	background:#b7eaff url("../images/up.png") no-repeat;
 	background-position:95%;
 }
@@ -180,7 +130,7 @@ figure img{
 	background-position:95%;
 }
 .content_title h2{
-	/* font-family:"avedet pro",arial , sans-serif; */
+	font-family:"avedet pro",arial , sans-serif;
 	font-size:24px;
 	font-weight:bold;
 	color:black;
@@ -192,108 +142,60 @@ figure img{
 	display:block;
 	width:100%;
 	margin:0 auto;
-	padding:30px 10% 40px;
-	font-family:arial , sans-serif;
+	padding:10px 10% 40px;
+	font-family:"open sans" ,arial , sans-serif;
 	font-size:16px;
 	line-height:20px;
 	text-align:justify;
-	background:rgba(255,255,255,0.8);
+	background:white;/*#f1fcff;*/
 	border:1px solid lightgray;
 	box-shadow:0px 0px 10px 1px rgba(0,0,0,0.1);
+	border-radius:10px;
 	margin-bottom:20px;
+	/* border-bottom:5px solid black; */
 }
-.content p, .content li , .content dd {
-	
-	font-family: arial , sans-serif;
-	font-size:16px;
-	line-height:30px;
-	text-align:justify;
-}
-.content p{
-	margin-top:5px;
-}
-
-.content ul {
-	padding-left:40px;
-	
-}
-.content ul,.content dl{
-	font-family:arial , sans-serif;
-	
-}
-.content dt {
-	margin-top:30px;
-	font-weight:bold;
-	color:#bb0404;
-}
-
-.content h3{
-	font-family:arial , sans-serif;
-	margin-top:40px;
-	font-size:19px;
-	font-weight:bold;
-	color:#bb0404;
-}
-
-.content a{
-	color:blue;
-	text-decoration:none;
-}
-.content a:hover{
-	color:#bb0404;
-}
-
-
 
 
 #page_banner {
 	display:flex;
 	width:100%;
-	background:white url("../images/back2.png") 420px -150px no-repeat;/* rgba(255, 195, 40, 0.8);/*rgba(255,255,255,0.9);*/
+	background:black;/* rgba(255, 195, 40, 0.8);/*rgba(255,255,255,0.9);*/
 	height:100px;
 	padding-left:15px;
 	position:fixed;
-	/* border-bottom:10px solid black; */
 	top:0px;
 	box-shadow:1px 1px 10px 2px rgba(10,10,10,0.5);
 	font-family:'Raleway',verdana, sans-serif;
 	overflow:hidden;
 	z-index:100;
-	color:black;
+	color:white;
 }
 
 #page_banner  h1 {
-	color:#025e77;
+	
 	padding:5px 40px;
-	text-shadow:0	px 2px 0px white;
 }
 #page_banner  h3{
-	color:#025e77;
 	padding:0px 40px;
 }
 
-#logo{
-	padding-top:10px;
-	width:120px;
-	height:100px;
-	position:relative;
-	top:10px;
-	left:20px;
-	z-index:1000;
-	
+#icon-menu{
+	width:140px;
+	height:auto;
+	display: flex;
+    justify-content: center;
+    flex-direction: column;
+	color:white;
+	padding-left:60px;	
+	border-left:2px solid lightgray;
+	background:#08aedc url("../images/menu.png") no-repeat 10px 50%;
 }
-#logo img{
-	 background:transparent "images/html5-css3-js.png";
-	 max-width:100%;
-	 height:auto;
-}
+
 #wrapper{
 	width:100%;
-	margin:0px auto 0px;
+	margin:100px auto 0px;
 	padding-top:20px;
 	z-index:0;
 	position:relative;
 	background:#f1f1f1;
 }
-
-
