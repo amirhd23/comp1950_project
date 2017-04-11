@@ -2,44 +2,31 @@
 <html  lang="en">
 	<head>
 		<meta charset="utf-8">
-		<title>BCIT::Comp1950</title>
+		<title>BCIT::Comp1950 - Protosite</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
-		
-		<!-- <script src="https://code.jquery.com/jquery-1.10.2.js"></script> -->
-		<!-- <script  src="http://code.jquery.com/jquery-3.2.1.slim.min.js"></script> -->
-		
-		
-		
+	
 		
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Advent+Pro:400,600%7COpen+Sans" >
 		
-		<link rel="stylesheet" href="slidebars.css">
-		<link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" href="css/slidebars.css">
+		<link rel="stylesheet" href="css/nav.css">
 		<link rel="stylesheet" href="css/style.css" />
 		
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
 		
+		<script src="js/protosite_script.js"></script>
 		
 	</head>
 	<body >
-		<header id="page_banner">
-				<div >
-					<h1  class="bcit">Comp 1950 | Intermediate web design and development</h1>
-					<h3>British Columbia Institute of Technology</h3>
-				</div>
-				<form>
-				  <input type="text" name="search" placeholder="Search..">
-				</form>
-				<div class="js-toggle-right-slidebar" id="icon-menu"><p>MENU</p></div>
-				
-		</header>
+		<!--#include file='inc/header.html' -->
+		
 		<div id="wrapper" canvas="container">	
 			
 			
 			<main id="top">
 				<article>
-					<header class="content_title">
+					<header class="content_title collapsible">
 						<h2>title 1</h2>
 					</header>
 					<section class="content">
@@ -66,7 +53,7 @@
 					</section>
 				</article>
 				<article>
-					<header class="content_title">
+					<header class="content_title collapsible">
 						<h2>title 2</h2>
 					</header>
 					<section class="content">
@@ -135,25 +122,8 @@
 					
 
 		</div>
-		<div class="top"><a href="#top"></a></div>	
-		
-		
-		<nav class="sidenav" off-canvas="slidebar-2 right overlay"  >
-				<p>Slidebar with id 'slidebar-2' on the right side and shift style.</p>
-		</nav>
-
-
-		
-		<script src="slidebars.js"></script>
-		<script src="scripts.js"></script>
-		
-		<script>
-			$(".content_title").addClass("arrow_up");
-			$(".content_title").click(function(){	
-				$( this ).toggleClass( "arrow_up arrow_down" );
-				$(this).next('.content').slideToggle();
-			});
-		</script>
-		
+				
+		<!--#include file='inc/nav.html'-->
+			
 	</body>
 </html>
